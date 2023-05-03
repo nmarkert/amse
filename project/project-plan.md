@@ -24,7 +24,7 @@ Excel Sheet provided by the Bundesnetzagentur, which shows the Charging Infrastr
 It includes normal charging points (Normalladepunkte, NLP) and fast charging points (Schnellladepunkte, SLP).
 Important for this project will be especially the sheet "4.1 Ladepunkte je BL", which shows for every german state the amount of NLPs and SLPs at a specific point in time.
 
-### Datasource2: New registrations of motor vehicles with alternative drive systems
+### Datasource2: New Registrations of Motor Vehicles with Alternative Drive Systems
 * Metadata URL: https://mobilithek.info/offers/573358160767496192
 * Data URL: https://www.kba.de/DE/Statistik/Fahrzeuge/Neuzulassungen/Umwelt/n_umwelt_node.html
     * e.g. for January 2022: https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ28/fz28_2022_01.xlsx?__blob=publicationFile
@@ -33,7 +33,7 @@ Important for this project will be especially the sheet "4.1 Ladepunkte je BL", 
 Excel Sheets provided for every Month by the Kraftfahrt-Bundesamt, which shows the new registrations of motor vehicles with alternative drive systems. 
 Important for this project will be especially the sheets "FZ 28.2", which shows the new registration numbers for each month since 2016 and "FZ 28.9", which shows the new registrations for a specific month categorized by the corresponding state
 
-### Datasource3: German states with capitals by area, population and population density
+### Datasource3: German States with Capitals by Area, Population and Population Density
 * Metadata URL: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.html
 * Data URL: https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/02-bundeslaender.xlsx?__blob=publicationFile
 * Data Format: xlsx
