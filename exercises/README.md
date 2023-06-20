@@ -1,7 +1,5 @@
 # Exercises
 
-TODO
-
 ## Exercise 1
 * Build an automated data pipeline for the following source:
     * https://mobilithek.info/offers/-8691940611911586805
