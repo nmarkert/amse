@@ -178,7 +178,7 @@ def get_datasource_2_2(year: int, month: int = 12) -> pd.DataFrame:
     df.columns = ["NR Overall", "NR Electric", "NR Plug-in-Hybrid"]
 
     # Just take the rows for the summation over the year
-    idx = int(np.where(df.index.map(lambda i: i.startswith("Januar-")))[0])
+    idx = int(np.where(df.index.map(lambda i: i.startswith("Januar-")))[0][0])
     if month != 1:
         df = df.iloc[idx:]
     else:
@@ -281,7 +281,7 @@ def combine_dataframes(data: list[pd.DataFrame]) -> pd.DataFrame:
 
 def store_dataframe(df: pd.DataFrame, table: str):
     """ Stores a dataframe as a table in an sqlite database """
-    print(f" - Storing Data into table '{table}' of database '{os.path.basename(DATABASE_PATH)}'") 
+    print(f" - Storing Data into table '{table}' of database '{os.path.basename(DATABASE_PATH)}'")
     df.to_sql(table, f"sqlite:////{DATABASE_PATH}", if_exists="replace")
 
 
@@ -316,7 +316,7 @@ def main():
     print("Storing the Data")
     store_dataframe(data_time, "over_time")
     store_dataframe(data_states, "by_states")
-    
+
     print("----------- Finished Datapipeline -----------")
 
 
